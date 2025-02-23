@@ -1,9 +1,0 @@
-[submodule "Laboratories Azure AI-102 Certification/mslearn-ai-language"]
-	path = Laboratories Azure AI-102 Certification/mslearn-ai-language
-	url = https://github.com/TheTorOnionSeeker/Azure-AI-102-Certification.git
-[submodule "Laboratories Azure AI-102 Certification/mslearn-ai-services"]
-	path = Laboratories Azure AI-102 Certification/mslearn-ai-services
-	url = https://github.com/TheTorOnionSeeker/Azure-AI-102-Certification.git
-[submodule "Laboratories Azure AI-102 Certification/mslearn-ai-vision"]
-	path = Laboratories Azure AI-102 Certification/mslearn-ai-vision
-	url = https://github.com/TheTorOnionSeeker/Azure-AI-102-Certification.git
