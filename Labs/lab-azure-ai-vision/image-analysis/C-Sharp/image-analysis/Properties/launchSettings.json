@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "image-analysis": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AI_SERVICE_ENDPOINT": "https://lab-implement-mslearn-ai-vision-guilledev.cognitiveservices.azure.com/",
+        "AI_SERVICE_KEY": "4BNGWgg3IybnVOFltis1oIFPkBAJCPbDE941fTSo7bRbXQ1bvClsJQQJ99BCACYeBjFXJ3w3AAAEACOGog7a"
+      }
+    }
+  }
+}

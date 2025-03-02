@@ -22,10 +22,12 @@ namespace image_analysis
             try
             {
                 // Get config settings from AppSettings
-                IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
+                /* IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
                 IConfigurationRoot configuration = builder.Build();
                 string aiSvcEndpoint = configuration["AIServicesEndpoint"];
-                string aiSvcKey = configuration["AIServicesKey"];
+                string aiSvcKey = configuration["AIServicesKey"]; */
+                string aiSvcEndpoint = Environment.GetEnvironmentVariable("AI_SERVICE_ENDPOINT");
+                string aiSvcKey = Environment.GetEnvironmentVariable("AI_SERVICE_KEY");
 
                 // Get image
                 string imageFile = "images/street.jpg";
@@ -35,6 +37,11 @@ namespace image_analysis
                 }
 
                 // Authenticate Azure AI Vision client
+                /* ImageAnalysisClient client = new ImageAnalysisClient(
+                    new Uri(aiSvcEndpoint),
+                    new AzureKeyCredential(aiSvcKey)); */
+                
+                // Authenticate Azure AI Vision client and get config settings from AppSettings
                 ImageAnalysisClient client = new ImageAnalysisClient(
                     new Uri(aiSvcEndpoint),
                     new AzureKeyCredential(aiSvcKey));
